@@ -17,14 +17,29 @@ public class PRAK101_2510817120019_GtQowitaCeliaA {
         System.out.print("Masukkan Tanggal Lahir: ");
         int tanggal = scanner.nextInt();
 
+        if (tanggal < 1 || tanggal > 31) {
+            System.out.println("Validasi Gagal: Tanggal harus di antara 1 sampai 31.");
+            System.exit(0);
+        }
+
         System.out.print("Masukkan Bulan Lahir: ");
         int bulan = scanner.nextInt();
+
+        if (bulan < 1 || bulan > 12) {
+            System.out.println("Validasi Gagal: Bulan harus di antara 1 sampai 12.");
+            System.exit(0);
+        }
 
         System.out.print("Masukkan Tahun Lahir: ");
         int tahun = scanner.nextInt();
 
         if ((tahun % 4 == 0 && tanggal > 29 && bulan == 2) || (tahun % 4 != 0 && tanggal > 28 && bulan == 2)) {
             System.out.println("Validasi Gagal: Bulan Febuari pada tahun tersebut maksimal sampai 28/29 hari.");
+            System.exit(0);
+        }
+
+        if ((bulan == 4 || bulan == 6 || bulan == 9 || bulan == 11) && tanggal > 30) {
+            System.out.println("Validasi Gagal: Bulan tersebut maksimal sampai 30 hari.");
             System.exit(0);
         }
 
