@@ -8,7 +8,7 @@ public class PRAK102_2510817120019_GtQowitaCeliaA {
         int angkaAwal = scanner.nextInt();
         int counter = 0;
 
-        while (counter <= 10) {
+        while (counter < 10) {
             if (angkaAwal % 5 == 0) {
                 int hasil = (angkaAwal / 5) - 1;
                 System.out.print(hasil);
@@ -16,7 +16,7 @@ public class PRAK102_2510817120019_GtQowitaCeliaA {
                 System.out.print(angkaAwal);
             }
 
-            if (counter < 10) {
+            if (counter < 9) {
                 System.out.print(",");
             }
             angkaAwal++;
