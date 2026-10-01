@@ -1,4 +1,4 @@
-package PRAK101_2510817120019_Gt.QowitaCeliaA;
+package MODUL1.PRAK101_2510817120019_Gt;
 
 import java.util.Locale;
 import java.util.Scanner;

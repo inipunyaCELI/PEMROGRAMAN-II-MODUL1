@@ -1,4 +1,4 @@
-package PRAK104_2510817120019_Gt.QowitaCeliaA;
+package MODUL1.PRAK104_2510817120019_Gt;
 
 import java.util.Scanner;
 
